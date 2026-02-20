@@ -1,0 +1,171 @@
+// Default Style
+@import 'assets/scss/style';
+
+/* CARD */
+.summary-card {
+  border-radius: 18px;
+  background: #ffffff;
+  padding: 5px;
+  transition: all 0.3s ease;
+  border: 1px solid #777;
+}
+
+/* Hover Lift */
+.summary-card:hover {
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.08),
+    0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Title */
+.summary-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  letter-spacing: 0.3px;
+}
+
+/* Value */
+.summary-value {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* Icon Circle */
+.summary-icon {
+  height: 42px;
+  width: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+/* METRIC CARD */
+.metric-card {
+  border-radius: 20px;
+  padding: 5px;
+  background: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.04),
+    0 2px 6px rgba(0, 0, 0, 0.03);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top gradient accent line */
+.metric-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+}
+
+/* Hover Lift */
+.metric-card:hover {
+  box-shadow:
+    0 8px 15px rgba(0, 0, 0, 0.08),
+    0 8px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* VALUE */
+.metric-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+/* LABEL */
+.metric-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  letter-spacing: 0.4px;
+}
+
+/* DESCRIPTION */
+.metric-desc {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #9ca3af;
+  line-height: 1.6;
+}
+
+/* Optional spacing */
+.metric-top {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Layout Background ===== */
+body {
+  background-color: #f8f9fc;
+  font-family: 'Inter', sans-serif;
+}
+
+/* ===== Card / Container Style ===== */
+.modern-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+/* ===== Buttons ===== */
+.btn-primary {
+  background-color: #4f46e5;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #4338ca;
+}
+
+/* ===== Table Styling ===== */
+.table {
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.table thead {
+  background: #f1f5f9;
+  color: #374151;
+  font-weight: 600;
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+  border-color: #e5e7eb !important;
+}
+
+/* Status Badge */
+.badge-soft-success {
+  background: #ecfdf5;
+  color: #047857;
+  font-weight: 500;
+}
+
+.badge-soft-secondary {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.table> :not(caption)>*>* {
+  padding: 10px !important;
+}
+
+.ellipses {
+  max-width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
