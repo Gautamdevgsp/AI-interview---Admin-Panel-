@@ -14,7 +14,7 @@ function AttemptTracking() {
     try {
       setLoading(true);
       const res = await axios.get(
-        `https://clostridial-chester-hydrostatically.ngrok-free.dev/admin/interviews/${interviewId}/attempts`,
+        `https://interview.ksesystem.com/admin/interviews/${interviewId}/attempts`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('authToken')}`,
@@ -36,7 +36,7 @@ function AttemptTracking() {
     try {
       setLoading(true);
       const res = await axios.get(
-        `https://clostridial-chester-hydrostatically.ngrok-free.dev/admin/interviews/${interviewId}/attempt-status`,
+        `https://interview.ksesystem.com/admin/interviews/${interviewId}/attempt-status`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('authToken')}`,

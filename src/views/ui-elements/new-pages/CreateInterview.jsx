@@ -71,7 +71,7 @@ const CreateInterview = () => {
   const blockInterview = async (id) => {
     console.log(' BLOCK API CALLED for interview:', id);
 
-    const res = await axios.post(`https://clostridial-chester-hydrostatically.ngrok-free.dev/admin/interviews/${id}/block`);
+    const res = await axios.post(`https://interview.ksesystem.com/admin/interviews/${id}/block`);
 
     console.log('BLOCK API RESPONSE:', res);
     return res;
@@ -80,7 +80,7 @@ const CreateInterview = () => {
   const unblockInterview = async (id) => {
     console.log(' UNBLOCK API CALLED for interview:', id);
 
-    const res = await axios.post(`https://clostridial-chester-hydrostatically.ngrok-free.dev/admin/interviews/${id}/unblock`);
+    const res = await axios.post(`https://interview.ksesystem.com/admin/interviews/${id}/unblock`);
 
     console.log(' UNBLOCK API RESPONSE:', res);
     return res;

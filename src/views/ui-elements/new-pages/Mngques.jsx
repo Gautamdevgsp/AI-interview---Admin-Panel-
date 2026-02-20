@@ -19,7 +19,7 @@ export default function QuestionAnswerTable() {
 
   const [keywords, setKeywords] = useState(['']);
 
-  const BASE_URL = 'https://clostridial-chester-hydrostatically.ngrok-free.dev/';
+  const BASE_URL = 'https://interview.ksesystem.com/';
 
   /* ================= MODAL HANDLERS ================= */
 

@@ -80,7 +80,7 @@ export default function DashSales() {
 
   useEffect(() => {
     axios
-      .get('https://clostridial-chester-hydrostatically.ngrok-free.dev/admin/dashboard', {
+      .get('https://interview.ksesystem.com/admin/dashboard', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('authToken')}`,
           'ngrok-skip-browser-warning': 'true'

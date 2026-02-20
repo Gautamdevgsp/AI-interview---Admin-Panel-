@@ -1,9 +1,9 @@
 import axios from "axios";
 
 const BASE_URL =
-  "https://clostridial-chester-hydrostatically.ngrok-free.dev/";
+  "https://interview.ksesystem.com/";
 
-export const SERVER_URL = "https://clostridial-chester-hydrostatically.ngrok-free.dev/";
+export const SERVER_URL = "https://interview.ksesystem.com/";
 
 // const INTERVIEW_ID = '123';
 class APIService {

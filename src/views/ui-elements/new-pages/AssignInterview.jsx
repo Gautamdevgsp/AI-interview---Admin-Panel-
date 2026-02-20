@@ -84,7 +84,7 @@ const AssignInterview = () => {
   const fetchAssignableInterviews = async () => {
     try {
       const res = await axios.get(
-        'https://clostridial-chester-hydrostatically.ngrok-free.dev/admin/interviews/assignable',
+        'https://interview.ksesystem.com/admin/interviews/assignable',
         {
           headers: { 'ngrok-skip-browser-warning': 'true' }
         }
@@ -120,7 +120,7 @@ const AssignInterview = () => {
     console.log(studentEmail, interviewId);
     try {
       const res = await axios.post(
-        'https://clostridial-chester-hydrostatically.ngrok-free.dev/admin/assign-interview',
+        'https://interview.ksesystem.com/admin/assign-interview',
         {
           student_email: selectedStudent.value,
           interview_id: selectedInterview.value

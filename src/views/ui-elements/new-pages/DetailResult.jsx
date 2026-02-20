@@ -50,7 +50,7 @@ function DetailResult() {
   //     const fetchStudents = async () => {
   //       try {
   //         const res = await axios.get(
-  //           `https://clostridial-chester-hydrostatically.ngrok-free.dev/admin/interviews/${selectedInterview.value}/students`,
+  //           `https://interview.ksesystem.com/admin/interviews/${selectedInterview.value}/students`,
   //           {
   //             headers: { 'ngrok-skip-browser-warning': 'true' }
   //           }
@@ -77,7 +77,7 @@ function DetailResult() {
     const fetchAssignedStudents = async () => {
       try {
         const res = await axios.get(
-          `https://clostridial-chester-hydrostatically.ngrok-free.dev/admin/interviews/${selectedInterview.value}/students`
+          `https://interview.ksesystem.com/admin/interviews/${selectedInterview.value}/students`
         );
         setAssignedStudents(res.data.students);
       } catch (err) {
@@ -97,7 +97,7 @@ function DetailResult() {
     const fetchAttemptStatus = async () => {
       try {
         const res = await axios.get(
-          `https://clostridial-chester-hydrostatically.ngrok-free.dev/admin/interviews/${selectedInterview.value}/attempt-status`,
+          `https://interview.ksesystem.com/admin/interviews/${selectedInterview.value}/attempt-status`,
           {
             headers: { 'ngrok-skip-browser-warning': 'true' }
           }
@@ -135,7 +135,7 @@ function DetailResult() {
 
     const fetchResults = async () => {
       try {
-        const res = await axios.get(`https://clostridial-chester-hydrostatically.ngrok-free.dev/admin/interviews/${selectedInterview.value}/results`, {
+        const res = await axios.get(`https://interview.ksesystem.com/admin/interviews/${selectedInterview.value}/results`, {
             headers: { 'ngrok-skip-browser-warning': 'true' }
           });
 

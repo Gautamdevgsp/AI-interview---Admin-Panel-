@@ -29,13 +29,13 @@ const Result = () => {
 
 
   //API DETAILS
-  const BASE_URL = `https://clostridial-chester-hydrostatically.ngrok-free.dev/admin/interviews/${selectedInterviewId}/students/${selectedEmail}/detailed-result`;
+  const BASE_URL = `https://interview.ksesystem.com/admin/interviews/${selectedInterviewId}/students/${selectedEmail}/detailed-result`;
 
   //FETCH INTERVIEWS
   useEffect(() => {
     const fetchInterviews = async () => {
       try {
-        const res = await axios.get('https://clostridial-chester-hydrostatically.ngrok-free.dev/admin/interviews', {
+        const res = await axios.get('https://interview.ksesystem.com/admin/interviews', {
           headers: { 'ngrok-skip-browser-warning': 'true' }
         });
 
@@ -61,7 +61,7 @@ const Result = () => {
     const fetchStudents = async () => {
       try {
         const res = await axios.get(
-          `https://clostridial-chester-hydrostatically.ngrok-free.dev/admin/interviews/${selectedInterviewId}/students`,
+          `https://interview.ksesystem.com/admin/interviews/${selectedInterviewId}/students`,
           {
             headers: { 'ngrok-skip-browser-warning': 'true' }
           }
@@ -86,7 +86,7 @@ const Result = () => {
 
   //   try {
   //     const res = await axios.get(
-  //       `https://clostridial-chester-hydrostatically.ngrok-free.dev/admin/interviews/${selectedInterviewId}/students/${selectedEmail}/detailed-result`,
+  //       `https://interview.ksesystem.com/admin/interviews/${selectedInterviewId}/students/${selectedEmail}/detailed-result`,
   //       {
   //         headers: { "ngrok-skip-browser-warning": "true" }
   //       }
@@ -111,7 +111,7 @@ const Result = () => {
 
       try {
         const res = await axios.get(
-          `https://clostridial-chester-hydrostatically.ngrok-free.dev/admin/interviews/${interviewId}/students/${email}/detailed-result`,
+          `https://interview.ksesystem.com/admin/interviews/${interviewId}/students/${email}/detailed-result`,
           {
             headers: { 'ngrok-skip-browser-warning': 'true' }
           }

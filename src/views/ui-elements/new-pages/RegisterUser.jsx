@@ -39,7 +39,7 @@ function RegisterUser() {
   const handleSubmit = async () => {
     try {
       setLoading(true);
-      await axios.post('https://clostridial-chester-hydrostatically.ngrok-free.dev/students/register', formData);
+      await axios.post('https://interview.ksesystem.com/students/register', formData);
       setShowModal(false);
       setFormData({ name: '', email: '', password: '' });
       fetchStudents();
@@ -57,7 +57,7 @@ function RegisterUser() {
   //     setLoading(true);
   //     const encodedEmail = encodeURIComponent(email);
 
-  //     await axios.delete(`https://clostridial-chester-hydrostatically.ngrok-free.dev/admin/students/by-email/${encodedEmail}`);
+  //     await axios.delete(`https://interview.ksesystem.com/admin/students/by-email/${encodedEmail}`);
 
   //     fetchStudents();
   //   } catch (error) {
@@ -76,7 +76,7 @@ function RegisterUser() {
 
       const encodedEmail = encodeURIComponent(selectedEmail);
 
-      await axios.delete(`https://clostridial-chester-hydrostatically.ngrok-free.dev/admin/students/by-email/${encodedEmail}`);
+      await axios.delete(`https://interview.ksesystem.com/admin/students/by-email/${encodedEmail}`);
 
       setShowDeleteModal(false);
       setSelectedEmail(null);
